@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О компании - EventLine</title>
+    <meta name="description" content="Техническое обеспечение свадеб, спецэффекты."/>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script defer src="script.js"></script>
+    <script defer src="OpenClose.js"></script>
+    <script defer src="numcount.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-adapt.css" />
+  </head>
+  <!----------------------------------------------------------КулибинSTART--------------------------------------------->
+  <body>
+    <header class="header">
+      <div class="header_wrap">
+        <div class="header_body">
+          <a href="https://eventline-tag.ru/index.html" class="header_logo">
+            <img src="img/logotype.svg" alt="" />
+          </a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li>
+                <a
+                  href="https://eventline-tag.ru/index.html"
+                  class="header_link"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/about.html"
+                  class="header_link"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/portfolio.html"
+                  class="header_link"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/services.html"
+                  class="header_link"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/contakts.html"
+                  class="header_link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about_image">
+        <div class="about_title">
+          О НАС
+          <p class="about__title">создаем и украшаем значимые события</p>
+        </div>
+      </section>
+
+      <button id="openButton" class="messenger_btn"></button>
+
+      <section class="about_maxim">
+        <div class="about_description">
+          <div class="about_foto">
+            <img class="about__foto" src="img/image 1.png" />
+          </div>
+          <div class="description_box">
+            <h2 class="description_title">ФЕДОСОВ МАКСИМ СЕРГЕЕВИЧ</h2>
+            <p class="description_text">Основатель</p>
+            <p class="description_text">
+              "Стремись - и всё получится!" - именно такому девизу следует
+              Максим.
+            </p>
+            <p class="description_text">
+              Полностью отдаётся своей работе и оттачивает мастерство
+              звукорежиссера уже более 16 лет.
+            </p>
+          </div>
+        </div>
+      </section>
+      <article>
+        <div id="counter" class="counter">
+          <div class="counter_box">
+            <div data-num="1000" class="counter_title">0</div>
+            <div class="counter_text">мероприятий мы создали и украсили</div>
+          </div>
+          <div class="counter_box">
+            <div data-num="16" class="counter_title">0</div>
+            <div class="counter_text">лет опыта</div>
+          </div>
+          <div class="counter_box">
+            <div data-num="450" class="counter_title">0</div>
+            <div class="counter_text">
+              единиц оборудования для мероприятий любого масштаба
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="about_team">
+        <div class="team_box">
+          <p class="team_text">
+            Мы делаем пиротехнические шоу, световое оформление и спецэффекты,
+            сдаем в аренду звуковое оборудование для мероприятий. Наша команда
+            стремится создавать незабываемые впечатления для наших клиентов и их
+            гостей. <br />
+            <span style="line-height: 30px"></span> <br />
+            К нам обращаются, когда хотят создать идеальное торжество, но не
+            хотят заморачиваться по поводу технических деталей. Мы подберем,
+            привезем, установим, настроим подходящее под задачу оборудование и
+            предоставим техническое сопровождение во время мероприятия.
+          </p>
+        </div>
+        <div class="team_foto">
+          <img class="team__foto" src="img/Rectangle 404.png" />
+        </div>
+      </section>
+      <!-- -------------- КулибинEND---------- -->
+      <!--------------------------------------------------Ilystart------------------------------------------------------>
+      <section id="fomPage" class="formP">
+        <div class="formBack">
+          <div class="window-form">
+            <button id="closeButton" class="close-button"></button>
+            <div id="formBox" class="form-box">
+              <div class="formTitle">
+                <p class="formtext">У вас остались вопросы?</p>
+                <p class="form_text">
+                  Заполните форму ниже и мы свяжемся с вами в ближайшее время
+                </p>
+              </div>
+              <form
+                id="QAforma"
+                name="QAforma"
+                class="QA-forma"
+                action="action.php"
+                method="post"
+              >
+                <fieldset>
+                  <legend>Имя</legend>
+                  <input
+                    id="nameForm"
+                    type="text"
+                    name="name"
+                    placeholder="Анна"
+                    required
+                  />
+                </fieldset>
+
+                <fieldset>
+                  <legend>Email</legend>
+                  <input
+                    id="emailForma"
+                    type="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                  />
+                </fieldset>
+
+                <fieldset>
+                  <legend>Мобильный телефон</legend>
+                  <input
+                    id="telForma"
+                    type="tel"
+                    name="phone"
+                    minlength="7"
+                    placeholder="+7(999)123-45-67"
+                    required
+                  />
+                </fieldset>
+                <div class="polConfDiv">
+                  <label id="checkLabelText" for="checkboxForma">
+                    <input id="checkboxForma" type="checkbox" required /> Я
+                    согласен(-а) на обработку персональных данных в соответствии
+                  </label>
+                  <p>
+                    с
+                    <a id="polConf" href="politika.html"
+                      >Политикой конфиденциальности</a
+                    >
+                  </p>
+                </div>
+                <input
+                  type="submit"
+                  id="acceptBtnForm"
+                  value="Отправить заявку"
+                />
+              </form>
+            </div>
+            <div id="completeBox" class="complete-form-box">
+              <div class="formTitle">
+                <p class="formtext">Спасибо! ваша заявка принята</p>
+                <p class="form_text">Мы свяжемся с вами в ближайшее время</p>
+              </div>
+              <div id="closeBtnFormDiv">
+                <button id="closeBtnForm">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------------------------- IlyaEND ------------------------------------------------------>
+    </main>
+    <!---------------------------------------------GALINASTART-------------------------------------------------------->
+    <footer class="footer">
+      <div class="container_footer">
+        <div class="footer_blocks">
+          <div class="footer__block">
+            <ul id="" class="list">
+              <li><img class="logo" src="./img/logotype.svg" alt="logo" /></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list">
+              <li class="footer__block">
+                <img
+                  class="footer___img"
+                  src="./img/geo.svg"
+                  alt="geolocation"
+                />
+                <a class="footer___text" href="#"
+                  >г. Таганрог, ул. Заводская 20-3</a
+                >
+              </li>
+              <li class="footer__block">
+                <img class="footer___img" src="./img/mail.svg" alt="email" />
+                <a class="footer___text" href="mailto:sff08@yandex.ru"
+                  >sff08@yandex.ru</a
+                >
+              </li>
+              <li class="footer__block">
+                <img class="footer___img" src="./img/phone.svg" alt="phone" />
+                <a class="footer___text" href="tel:+79185369230"
+                  >+7-918-536-92-30</a
+                >
+              </li>
+              <li class="footer__block">
+                <a target="_blank" href="https://wa.me/79185369230">
+                  <img
+                    class="footer___img_sn"
+                    src="./img/telega.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+
+                <a target="_blank" href="https://vk.com/el_eventline">
+                  <img
+                    class="footer___img_sn"
+                    src="./img/vk.svg"
+                    alt="vkontakte"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="list">
+          <li>
+            <a
+              class="footer___text policy"
+              href="https://eventline-tag.ru/politika.html"
+              >Политика конфиденциальности</a
+            >
+          </li>
+          <li>© 2023 проект 372 1T Sprint</li>
+        </ul>
+      </div>
+    </footer>
+    <!---------------------------------------------GALINAEND------------------------------------------------------->
+    <script src="Swiper.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>
