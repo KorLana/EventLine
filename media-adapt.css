@@ -1,0 +1,871 @@
+/* -------------------------------------------------Кулибин--------------------------------------------------------- */
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header_body {
+    height: 50px;
+  }
+  .header_logo {
+    flex: 0 0 90px;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before,
+  .header_burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before {
+    top: 0;
+  }
+  .header_burger:after {
+    bottom: 0;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header_menu {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #1d1930d0;
+    padding: 70px 10px 20px 10px;
+  }
+  .header_menu.active {
+    top: 0;
+  }
+  .header_list {
+    display: block;
+  }
+  .header_list li {
+    margin: 0px 0px 20px 0px !important;
+  }
+
+  .about_content {
+    margin: 0 auto;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+  }
+  .intro_title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .about_box {
+    padding-top: 40px;
+  }
+  .about_img {
+    display: none;
+  }
+  .about_wrap {
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+  .about_content {
+    background: none;
+  }
+}
+@media (max-width: 510px) {
+  .intro_title {
+    font-size: 16px;
+    letter-spacing: 1, 5px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .title,
+  .title_advantages {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .about_content {
+    min-width: 320px;
+  }
+}
+
+/*---------------------------------------------Кулибин end---------------------------------------------------------*/
+/*----------------------------------------------Вика start---------------------------------------------------------*/
+
+@media (max-width: 1175px) {
+  .body {
+    background-image: url(img/desktop_clouds_main_page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .foto_left_1 {
+    display: none;
+  }
+
+  .foto_top {
+    width: 50%;
+    display: flex;
+    margin-right: 14px;
+  }
+
+  .foto_bottom {
+    width: 100%;
+    display: flex;
+  }
+
+  .foto_small {
+    width: 50%;
+  }
+
+  .foto_left_2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto_adaptiv_1 {
+    width: 100%;
+  }
+
+  .foto_bigger:hover {
+    transform: scale(1);
+  }
+
+  .foto_small:hover {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap_portfolio {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .content_item {
+    width: 30%;
+  }
+
+  .foto_left_1 {
+    display: none;
+  }
+  .portfolio {
+    display: none;
+  }
+  .title {
+    padding-bottom: 20px;
+  }
+
+  .mySwiper {
+    display: block;
+    width: 100%;
+  }
+
+  .slide_link {
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .img_slide {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .link {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 667px) {
+  .content_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .content_block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .content_item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content_block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .content_block_bottom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  /* .title_advantages {
+    margin-bottom: 20px;
+  } */
+}
+
+@media (max-width: 376px) {
+  .content_img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .content_text {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+
+  .content_item {
+    margin-bottom: 16px;
+  }
+
+  .content_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .content_block {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 40px; */
+  }
+
+  .content_block_bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+/*----------------------------------------------Вика END---------------------------------------------------------*/
+/*-----------------------------------------------------ИльяSTART------------------------------------------ */
+@media (any-pointer: coarse) {
+  /* .window-form {
+    height: 100vh;
+  } */
+
+  .QA-forma {
+    width: 100%;
+  }
+
+  .formTitle h1 {
+    font-size: 20px;
+  }
+
+  .formTitle h2 {
+    font-size: 14px;
+  }
+
+  .QA-forma label,
+  #acceptBtnForm {
+    font-size: 15px;
+  }
+  .polConfDiv {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .QA-forma label,
+  #acceptBtnForm {
+    font-size: 15px;
+  }
+  .polConfDiv {
+    font-size: 13px;
+  }
+}
+/*-----------------------------------------------------ИльяEND------------------------------------------ */
+
+/*-----------------------------------------------------MAXIMSTART------------------------------------------*/
+@media (max-width: 1050px) {
+  .container-service {
+    max-width: 660px;
+  }
+
+  .swiper_position {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 690px) {
+  .container-service {
+    max-width: 600px;
+  }
+
+  .swiper_position {
+    max-width: 315px;
+  }
+}
+
+@media (max-width: 620px) {
+  .service_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 420px;
+  }
+
+  .service_items {
+    width: 100%;
+  }
+
+  .service_picture {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service_box {
+    max-width: 300px;
+    padding: 0 15px;
+  }
+}
+/*-----------------------------------------------------MAXIMEND------------------------------------------*/
+/*-----------------------------------------------------GalinaStart------------------------------------------*/
+
+@media (max-width: 767px) {
+  .footer__block {
+    height: auto;
+  }
+
+  .footer___text {
+    font-size: 16px;
+  }
+
+  .footer___img {
+    width: 10px;
+    height: auto;
+  }
+
+  .footer___img_sn {
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .policy {
+    left: 20px;
+    line-height: 20px;
+    width: 300px;
+  }
+}
+/*-----------------------------------------------------GalinaEND------------------------------------------*/
+
+/*---- Politika start----*/
+@media (max-width: 775px) {
+  .politika_title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+  .politika_box {
+    max-width: 704px;
+  }
+
+  .politika_text {
+    width: 522px;
+    font-style: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .indent {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .politika_link {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: 500;
+  }
+  .politika_title {
+    font-size: 20px;
+    line-height: 20px;
+   
+  }
+  .politika_box {
+    max-width: 331px;
+  }
+
+  .politika_text {
+    width: 100%;
+  }
+  .indent {
+    padding-top: 30px;
+    margin: 0 15px;
+  }
+}
+/*---- Politika end----*/
+/* ----------- 404 start----------------- */
+@media (max-width: 768px) {
+  .mistake__btn {
+    width: 248px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 430px) {
+  .mistake__btn {
+    width: 232px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+/* ---------------- 404 end ----------------- */
+
+/* ----------------Контакты----------------- */
+
+@media (max-width: 930px) {
+  .contacts_info {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .contacts_map {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .contacts_adaptiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .contacts_adaptiv {
+    flex-direction: column;
+  }
+
+  .contacts_info {
+    width: 100%;
+  }
+
+  .contacts_map {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contacts_info {
+    height: 200px;
+  }
+}
+
+@media (max-width: 390px) {
+  .contacts_title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .contacts_link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -40px;
+  }
+
+  .list_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .contacts_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contacts_info {
+    height: 200px;
+  }
+}
+/* ----------------Контакты---------------- */
+/* --------------О нас старт----------------- */
+@media (max-width: 753px) {
+  .about_description {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  .description_box {
+    margin: 0 auto;
+  }
+  .description_title {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+  }
+  .description_text {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20px 20px 20px;
+  }
+  .about__foto {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .about_foto {
+    width: 100%;
+  }
+  .counter {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .counter_box {
+    margin: 0 auto;
+  }
+  .team_text {
+    font-size: 16px;
+  }
+  .counter_title {
+    text-align: center;
+  }
+  .counter_text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  .about_team {
+    position: relative;
+    top: -50px;
+  }
+  .team_foto {
+    display: none;
+  }
+  .team_box {
+    max-width: 780px;
+    width: 100%;
+  }
+}
+/* --------------О нас конец------------- */
+
+/* -----------конструктор старт---------- */
+@media (max-width: 1180px) {
+  .main_background {
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_background {
+    margin: 0px 0px;
+  }
+
+  .left {
+    margin-right: 1%;
+  }
+
+  .middle {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .right {
+    margin-left: 1%;
+  }
+
+  .main_btn {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 670px) {
+  /* body {
+    background-image: url(img/clouds-phone.svg);
+  } */
+
+  .main_title {
+    font-size: 26px;
+    max-width: 360px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_subtitle {
+    font-size: 20px;
+    max-width: 360px;
+  }
+
+  .main_background {
+    margin: 0px 0px;
+  }
+
+  .main__step_text {
+    font-size: 16px;
+  }
+
+  .main__btn_cancel {
+    display: none;
+  }
+
+  .main__block {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px;
+  }
+  .main_total {
+    padding-bottom: 40px;
+  }
+
+  .main_text {
+    font-size: 16px;
+  }
+
+  .main_btn {
+    padding-left: 20px;
+  }
+
+  .main_background {
+    background: none;
+    backdrop-filter: none;
+  }
+}
+/* --------конструктор конец --------------- */
+
+/* --------------услуги Вика старт---------- */
+@media (max-width: 1060px) {
+  .card_btn {
+      width: 150px;
+      height: 60px;
+  }
+
+  .card_footer {
+      margin-top: 19px;
+      margin-bottom: 24px;
+  }
+
+  .item_text {
+      padding-bottom: 0;
+      padding-left: 0;
+      /* padding: 10px; */
+  }
+
+  .item_text p {
+      margin-bottom: 0;
+  }
+
+  .io_item {
+      padding-bottom: 0;
+  }
+
+  .card_img_box {
+      width: 45%;
+  }
+
+  .card_info {
+      margin-left: 20px;
+  }
+
+  .card_content {
+      width: 55%;
+  }
+
+  .card {
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+
+  .contacts_link {
+      margin-left: 40px;
+  }
+
+  .services_btn {
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .contacts_link {
+      margin-left: 0;
+  }
+
+  .services_btn {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .card_info {
+      margin-left: 18px;
+  }
+
+  .card_img_box {
+      width: 40%;
+  }
+
+  .card_content {
+      width: 60%;
+  }
+
+  .io_button_wrap {
+      margin-top: 0;
+  }
+
+  .io_button {
+      margin-top: 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  
+  .card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .btn_wrap {
+      display: none;
+  }
+
+  .card_img_box {
+      width: 100%;
+  }
+
+  .card_content {
+      width: 100%;
+  }
+
+  .card_info {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 15px;
+  }
+
+  .card_top {
+      margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  .card_footer {
+      margin-left: 12px;
+      margin-right: 8px;
+  }
+
+  .card_title {
+      margin-left: 12px;
+  }
+
+  .card_info {
+      margin-left: 5px;
+      margin-right: 15px;
+  }
+
+  .io_button {
+      margin-right: 13px;
+  }
+
+  .card_price {
+      font-size: 22px;
+  }
+
+  .card_btn {
+      font-size: 18px;
+  }
+
+  .contacts_title {
+      font-size: 20px;
+  }
+
+  .contacts_link {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .card_price {
+      font-size: 20px;
+  }
+
+  .card_btn {
+      font-size: 16px;
+      width: 110px;
+  }
+}
+
+/*------------------ услуги Vikki end ------------*/
