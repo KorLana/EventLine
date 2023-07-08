@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Техническое обеспечение свадеб, спецэффекты. Сценический свет, тяжелый дым, салют, феерверк, холодные фонтаны, звуковое оборудование, диодный экран. Все, что нравится невестам. Работаем Таганрог, Ростовская область, Краснодарский край"/>
+    <title>EventLine - спецэффекты</title>
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="jquery.js"></script>
+    <script defer src="script.js"></script>
+    <!-- <script defer src="scriptbutton.js"></script> -->
+    <script defer src="OpenClose.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-adapt.css" />
+  </head>
+  <!----------------------------------------------------------КулибинSTART--------------------------------------------->
+  <body>
+    <header class="header">
+      <div class="header_wrap">
+        <div class="header_body">
+          <a href="https://eventline-tag.ru/index.html" class="header_logo">
+            <img src="img/logotype.svg" alt="" />
+          </a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li>
+                <a href="https://eventline-tag.ru/index.html" class="header_link"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/about.html"
+                  class="header_link"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/portfolio.html"
+                  class="header_link"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/services.html"
+                  class="header_link"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://eventline-tag.ru/contakts.html"
+                  class="header_link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="video_wrap">
+          <video
+            class="video"
+            src="img/zxx.mp4"
+            loop
+            autoplay
+            muted
+            controls
+            poster="img/zxx.png"
+          ></video>
+        </div>
+
+        <div class="intro_title">
+          ВОПЛОЩАЙ ИДЕИ В ЖИЗНЬ - СОБЕРИ СВОЕ УНИКАЛЬНОЕ ТОРЖЕСТВО
+        </div>
+        <div class="intro_btn">
+          <a href="https://eventline-tag.ru/konstruktor.html">
+            <button class="intro__btn">Собрать</button>
+          </a>
+        </div>
+      </section>
+
+      <button id="openButton" class="messenger_btn"></button>
+
+      <section class="about">
+        <div class="about_box">
+          <div class="about_wrap">
+            <div class="about_img">
+              <img class="about__img" src="img/about_us-image.png" />
+            </div>
+            <div class="about_content">
+              <h2 class="heading">О НАС</h2>
+              <p class="about_text">
+                Занимаемся украшением самых значимых событий в жизни. Создаём
+                впечатляющие, эффектные и красочные шоу более 15 лет.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------ КулибинEND---------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------------------IlyaEND------------------------------------------------------>
+      <section id="fomPage" class="formP">
+        <div class="formBack">
+          <div class="window-form">
+            <button id="closeButton" class="close-button"></button>
+            <div id="formBox" class="form-box">
+              <div class="formTitle">
+                <p class="formtext">У вас остались вопросы?</p>
+                <p class="form_text">
+                  Заполните форму ниже и мы свяжемся с вами в ближайшее время
+                </p>
+              </div>
+              <form
+                id="QAforma"
+                name="QAforma"
+                class="QA-forma"
+                action="action.php"
+                method="post"
+              >
+                <fieldset>
+                  <legend>Имя</legend>
+                  <input
+                    id="nameForm"
+                    type="text"
+                    name="name"
+                    placeholder="Анна"
+                    required
+                  />
+                </fieldset>
+
+                <fieldset>
+                  <legend>Email</legend>
+                  <input
+                    id="emailForma"
+                    type="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                  />
+                </fieldset>
+
+                <fieldset>
+                  <legend>Мобильный телефон</legend>
+                  <input
+                    id="telForma"
+                    type="tel"
+                    name="phone"
+                    minlength="7"
+                    placeholder="+7(999)123-45-67"
+                    required
+                  />
+                </fieldset>
+                <div class="polConfDiv">
+                  <label id="checkLabelText" for="checkboxForma">
+                    <input id="checkboxForma" type="checkbox" required /> Я
+                    согласен(-а) на обработку персональных данных в соответствии
+                  </label>
+                  <p>
+                    с
+                    <a id="polConf" href="politika.html"
+                      >Политикой конфиденциальности</a
+                    >
+                  </p>
+                </div>
+                <input
+                  type="submit"
+                  id="acceptBtnForm"
+                  value="Отправить заявку"
+                />
+              </form>
+            </div>
+            <div id="completeBox" class="complete-form-box">
+              <div class="formTitle">
+                <p class="formtext">Спасибо! ваша заявка принята</p>
+                <p class="form_text">Мы свяжемся с вами в ближайшее время</p>
+              </div>
+              <div id="closeBtnFormDiv">
+                <button id="closeBtnForm">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------------------------- IlyaEND ------------------------------------------------------>
+      <!--------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------VikaSTART----------------------------------------------------->
+
+     
+      <section class="wrap_portfolio">
+        <div class="center">
+          <h2 class="title">Портфолио</h2>
+          <div class="portfolio">
+            <div class="foto foto_left_1">
+              <img
+                class="foto_bigger"
+                src="img/portfolio1.png"
+                alt="firework"
+              />
+            </div>
+
+            <div class="foto foto_left_2">
+              <div class="foto_bottom">
+                <img
+                  class="foto_margin foto_small"
+                  src="img/portfolio2.png"
+                  alt="firework"
+                />
+                <img
+                  class="foto_small"
+                  src="img/portfolio3.png"
+                  alt="wedding"
+                />
+              </div>
+              <img
+                class="foto_bigger foto_adaptiv_1"
+                src="img/portfolio4.png"
+                alt="burning heart"
+              />
+            </div>
+            <div class="foto foto_top">
+              <a class="link" href="https://eventline-tag.ru/portfolio.html"
+                >Посмотреть все &#8594;</a
+              >
+              <img
+                class="foto_bigger foto_adaptiv"
+                src="img/portfolio5.png"
+                alt="fireworks track"
+              />
+              <div class="foto_right foto_adaptiv_2">
+                <img
+                  class="foto_margin foto_small"
+                  src="img/portfolio6.png"
+                  alt="fireworks"
+                />
+                <img
+                  class="foto_small"
+                  src="img/portfolio7.png"
+                  alt="fireworks"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Слайдер -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1">
+            <img class="img_slide" src="img/slide3.png" alt="fireworks track" />
+          </div>
+          <div class="swiper-slide slide2">
+            <img class="img_slide" src="img/slide2.png" alt="firework" />
+          </div>
+          <div class="swiper-slide slide3">
+            <img class="img_slide" src="img/slide1.png" alt="burning heart" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slide_link">
+        <a class="link" href="https://eventline-tag.ru/portfolio.html">Посмотреть все &#8594;</a>
+      </div>
+      <!-- Слайдер -->
+
+      <!-- Swiper JS -->
+
+      <!-- Initialize Swiper -->
+      <!---------------------------------------------Vika END---------------------------------------------------------->
+      <!--------------------------------------------------------------------------------------------------------------->
+      <!---------------------------------------------MAXIM START------------------------------------------------------->
+      <section class="services_wrap" id="service_wrapper">
+        <div class="container-service">
+          <h2 class="service_title title">услуги</h2>
+
+          <div class="service_box">
+            <ul class="service_items">
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/lights.png')"
+                  >Сценический свет</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/sound.png')"
+                  >Звуковое оборудование</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/pyro.png')"
+                >
+                  Пиротехническое шоу
+                </a>
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/heavysmoke.png')"
+                  >Тяжёлый дым</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/colorsmoke.png')"
+                  >Цветной дым</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/confetty.png')"
+                  >Конфетти</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/snow.png')"
+                  >Искусственный снег</a
+                >
+              </li>
+              <li class="service__links">
+                <a
+                  href="javascript:"
+                  class="service__links btn"
+                  onclick="handleClick('img/screen.png')"
+                  >Светодиодный экран</a
+                >
+              </li>
+            </ul>
+            <div class="service_picture">
+              <img
+                src="img/heavysmoke.png"
+                alt="change logo"
+                class="service_logo"
+                id="photo_service"
+              />
+              <a
+                href="https://eventline-tag.ru/services.html"
+                class="service_next"
+                >Подробнее &#8594;</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap_advantages">
+        <div class="center">
+          <h2 class="title_advantages">Наши преимущества</h2>
+          <div class="content_wrap">
+            <div class="content_block">
+              <figure class="content_item">
+                <img class="content_img" src="img/icon1.svg" alt="range" />
+                <figcaption class="content_text">
+                  Разнообразный <br />
+                  ассортимент
+                </figcaption>
+              </figure>
+
+              <figure class="content_item">
+                <img class="content_img" src="img/icon6.svg" alt="care" />
+                <figcaption class="content_text">Забота о клиенте</figcaption>
+              </figure>
+
+              <figure class="content_item">
+                <img class="content_img" src="img/icon2.svg" alt="quality" />
+                <figcaption class="content_text">
+                  Качество и лицензии
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="content_block content_block_bottom">
+              <figure class="content_item">
+                <img class="content_img" src="img/icon4.svg" alt="efficiency" />
+                <figcaption class="content_text">
+                  Оперативность <br />
+                  установки
+                </figcaption>
+              </figure>
+
+              <figure class="content_item">
+                <img class="content_img" src="img/icon3.svg" alt="prices" />
+                <figcaption class="content_text">Лояльные цены</figcaption>
+              </figure>
+
+              <figure class="content_item">
+                <img class="content_img" src="img/icon5.svg" alt="surprises" />
+                <figcaption class="content_text">
+                  Приятные сюрпризы <br />
+                  клиентам
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container-service">
+          <h2 class="reviews_title title">Отзывы</h2>
+          <div class="swiper_position">
+            <div class="prev">
+              <a href="#"><img src="img/next.svg" alt="" /></a>
+            </div>
+
+            <div class="swiper swiper_box">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides1 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/c.svg" alt="Reviews" />
+                      <p class="reviews__name">Светлана</p>
+                    </div>
+                    <p class="reviews_text">
+                      Доброе утро! Спасибо большое за красивое окончание вечера.
+                      Музыка подобрана идеально.
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+
+                <!-- Slides2 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/b.svg" alt="Reviews" />
+                      <p class="reviews__name">Вероника</p>
+                    </div>
+                    <p class="reviews_text">
+                      Спасибо большое! Это было фантастически красиво, мы не
+                      ожидали,благодарим всю команду!
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+
+                <!-- Slides3 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/julia.svg" alt="Reviews" />
+                      <p class="reviews__name">Юлия</p>
+                    </div>
+                    <p class="reviews_text">
+                      Доброе утро, хочу сказать вам большое спасибо, свет супер,
+                      финал был шикарный, спасибо..
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+
+                <!-- Slides4 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/h.svg" alt="Reviews" />
+                      <p class="reviews__name">Наталья</p>
+                    </div>
+                    <p class="reviews_text">
+                      Доброе утро!Спасибо за наш праздник! Вы творили сказку в
+                      нашем зале, спасибо за финал!
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+
+                <!-- Slides5 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/k.svg" alt="Reviews" />
+                      <p class="reviews__name">Кристина</p>
+                    </div>
+                    <p class="reviews_text">
+                      Привет! То что вы сделали, превзошло все мои ожидания, это
+                      было ярким и запоминающимся воспоминанием!
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+
+                <!-- Slides6 -->
+
+                <div class="swiper-slide">
+                  <div class="reviews_box">
+                    <div class="reviews_name">
+                      <img src="img/a.svg" alt="Reviews" />
+                      <p class="reviews__name">Алла</p>
+                    </div>
+                    <p class="reviews_text">
+                      Спасибо большое за организацию нашего праздника! Все
+                      прошло на высшем уровне! Нам очень понравилось!
+                    </p>
+                    <!-- <a href="#" class="reviews_link">Читать полностью</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next">
+              <a href="#"><img src="img/prev.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------------------------------------MAXIM END---------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------GALINASTART-------------------------------------------------------->
+    <footer class="footer">
+      <div class="container_footer">
+        <div class="footer_blocks">
+          <div class="footer__block">
+            <ul id="" class="list">
+              <li><img class="logo" src="img/logotype.svg" alt="logo" /></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list">
+              <li class="footer__block">
+                <img
+                  class="footer___img"
+                  src="img/geo.svg"
+                  alt="geolocation"
+                />
+                <a class="footer___text" href="#"
+                  >г. Таганрог, ул. Заводская 20-3</a
+                >
+              </li>
+              <li class="footer__block">
+                <img class="footer___img" src="img/mail.svg" alt="email" />
+                <a class="footer___text" href="mailto:sff08@yandex.ru"
+                  >sff08@yandex.ru</a
+                >
+              </li>
+              <li class="footer__block">
+                <img class="footer___img" src="img/phone.svg" alt="phone" />
+                <a class="footer___text" href="tel:+79185369230"
+                  >+7-918-536-92-30</a
+                >
+              </li>
+              <li class="footer__block">
+                <a target="_blank" href="https://wa.me/79185369230">
+                  <img
+                    class="footer___img_sn"
+                    src="img/telega.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+
+                <a target="_blank" href="https://vk.com/el_eventline">
+                  <img
+                    class="footer___img_sn"
+                    src="img/vk.svg"
+                    alt="vkontakte"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="list">
+          <li>
+            <a
+              class="footer___text policy"
+              href="https://eventline-tag.ru/politika.html"
+              >Политика конфиденциальности</a
+            >
+          </li>
+          <li>© 2023 проект 372 1T Sprint</li>
+        </ul>
+      </div>
+    </footer>
+    <!---------------------------------------------GALINAEND------------------------------------------------------->
+    <script src="Swiper.js"></script>
+    <!-- <script src="reviews.js"></script> -->
+   
+  </body>
+</html>
